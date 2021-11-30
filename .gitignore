@@ -1,3 +1,9 @@
+#Agregados directorios y ficheros de python
+Lib
+Scripts
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
