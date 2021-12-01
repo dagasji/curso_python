@@ -1,8 +1,21 @@
-def preguntar():
-    nombre = input("Introduzca el nombre: ")
-    edad = int(input("Introduzca la edad: "))
+import datetime
 
-    anio_100 = 2021 + (100 - edad)
-    print(f"Cumplirá los 100 años en el año {anio_100}")
+class Ejercicio1():
+    
+    nombre = None
+    edad = None
+    
+    def preguntar(self):
+        self.nombre = input("Introduzca el nombre: ")
+        self.edad = int(input("Introduzca la edad: "))
 
-preguntar()
+    def calcular(self):
+        currentDate = datetime.date.today()
+        anio_actual = currentDate.year
+        anio_100 = anio_actual + (100 - self.edad)
+        print(f"Cumplirá los 100 años en el año {anio_100}")
+
+
+ejercicio = Ejercicio1()
+ejercicio.preguntar()
+ejercicio.calcular()

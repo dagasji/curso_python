@@ -1,3 +1,5 @@
+import math
+
 def preguntar():
     numero = int(input("Introduzca un número:"))
 
